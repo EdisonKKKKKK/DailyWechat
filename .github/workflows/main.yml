@@ -1,7 +1,7 @@
 name: send card
 on:
   schedule:
-  - cron:  '50 9 * * *' 
+  - cron:  '53 9 * * *' 
   workflow_dispatch:
 
 jobs:
@@ -26,3 +26,4 @@ jobs:
       APP_ID: ${{ secrets.APP_ID }}
       APP_SECRET: ${{ secrets.APP_SECRET }}
       TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+      TZ: Asia/Shanghai
